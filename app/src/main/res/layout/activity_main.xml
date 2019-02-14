@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dronecontrol.mofed.dronecontrol.MainActivity">
+
+
+    <EditText
+        android:id="@+id/ipText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="114dp"
+        android:ems="10"
+        android:hint="ip"
+        android:inputType="textPersonName"
+        android:text="http://192.168.4.1" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ipText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp"
+        android:text="status" />
+
+    <EditText
+        android:id="@+id/uvLimit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ipText"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/ipText"
+        android:layout_centerHorizontal="true"
+        android:text="2500.0"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/uvVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/uvLimit"
+        android:layout_alignLeft="@+id/uvLimit"
+        android:layout_alignRight="@+id/uvLimit"
+        android:layout_alignStart="@+id/uvLimit"
+        android:layout_below="@+id/uvLimit"
+        android:layout_marginTop="20dp"
+        android:text="TextView" />
+
+
+</RelativeLayout>
