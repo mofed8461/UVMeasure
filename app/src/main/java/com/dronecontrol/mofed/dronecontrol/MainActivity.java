@@ -84,6 +84,7 @@ public class MainActivity extends AppCompatActivity {
 
                 try {
                     String asText = getContents(web);
+//                    String asText = "1000";
                     float uv = Float.parseFloat(asText);
                     float uvLim = Float.parseFloat(uvLimit.getText().toString());
                     if (uv > uvLim)
